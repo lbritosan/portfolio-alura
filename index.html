@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Menu Principal -->
+    <header>
+        <div class="logo">
+            <img src="./imagem/auto_awesome_black_24dp 1.png" alt="Logo">
+            <span class="nome">Leonardo Brito</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#hobbies">Hobbies e Soft Skills</a></li>
+                <li><a href="#formacao">Formações e Cursos</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre-mim" class="hero">
+        <div class="hero-text">
+            <h1>Olá, meu nome é Leonardo</h1>
+            <p>Eu sou Desenvolvedor Salesforce e participo do projeto Oracle ONE na Alura.</p>
+            <a href="https://www.linkedin.com/in/lbritosan/" class="btn" target="_blank">LinkedIn</a>
+        </div>
+        <div class="hero-photo">
+            <img src="./imagem/leonardobrito.jpeg" alt="Foto de Leonardo Brito">
+          </div>
+    </section>
+
+    <!-- Seção Hobbies e Soft Skills -->
+    <section id="hobbies">
+        <h2>Hobbies e Soft Skills</h2>
+        <ul>
+            <li>Musculação</li>
+            <li>Correr no Parque do Ibirapuera</li>            
+            <li>Ouvir música</li>
+            <li>Escutar música</li>
+        </ul>
+    </section>
+
+    <!-- Seção Formações e Cursos -->
+    <section id="formacao">
+        <h2>Formação Acadêmica e Cursos</h2>
+        <div>
+            <article>
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p>FIAP - 2021</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seção Experiência em Programação -->
+    <section id="experiencia">
+        <h2>Experiência Profissional</h2>
+        <div>
+            <article>
+                <h3>Decodificador de Texto</h3>
+                <p>Challenge Alura Codificador</p>
+                <a href="#">Repositório</a> | <a href="#">Ver Demo</a>
+            </article>
+            <article>
+                <h3>Jogo com HTML, CSS e JavaScript</h3>
+                <p>Challenge Oracle</p>
+                <a href="#">Repositório</a> | <a href="#">Ver Demo</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por Leonardo Brito dos Santos - 2025</p>
+    </footer>
+</body>
+</html>
