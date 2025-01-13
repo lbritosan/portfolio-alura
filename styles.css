@@ -32,25 +32,6 @@ header .logo img {
   margin-right: 10px;
 }
 
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-  } */
-
 .nome {
   font-size: 1.2rem;
   font-weight: bold;
@@ -91,79 +72,46 @@ section {
     padding: 40px 10%;
 }
 
-/**
+/* Hero Section */
 .hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 20px;
-  background-color: #f8f9fa; 
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 40px; /* Espaço entre os elementos */
+  padding: 40px 10%;
+  background-color: #eef2f7;
 }
 
 .hero-text {
-  max-width: 60%;
+  max-width: 50%; /* Limita o texto a 50% da largura */
+  text-align: left; /* Alinha o texto à esquerda */
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
   color: #333;
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
 }
 
 .hero-text p {
   font-size: 1.2rem;
   color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .hero-photo {
-  width: 150px; 
-  height: 150px; 
-  border-radius: 50%; 
-  overflow: hidden; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  flex-shrink: 0; /* Garante que a imagem não encolha */
 }
 
 .hero-photo img {
-  width: 100%;
-  height: 100%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona um leve destaque na foto */
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo-img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-
-*/
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 10%;
-    background-color: #eef2f7;
-}
-
-.hero-text {
-    max-width: 50%;
-}
-
-.hero-text h1 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-.hero-photo img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
 
 /* Estilos da Seção Sobre Mim */
 #sobre-mim {
@@ -338,4 +286,54 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-photo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  section {
+    padding: 20px 5%;
+  }
+
+  #hobbies ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  .hero-photo img {
+    width: 120px;
+    height: 120px;
+  }
 }
